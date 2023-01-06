@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="dis.css">
+    <script src="./jscal.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora básica</h1>
+    <div class="form-container">
+      <form>
+        <input type="text" id="input" value="" disabled class="display"/>
+        <br />
+        <input type="button" value="%" onclick="addvalue('%')" class="input"/>
+        <input type="button" value="x^" onclick="addvalue('x^')" class="input"/>
+        <input type="button" value="√" onclick="root('√')" class="input"/>
+        <br>
+        <input type="button" value="1" onclick="addvalue(1)" class="number" />
+        <input type="button" value="2" onclick="addvalue(2)" class="number" />
+        <input type="button" value="3" onclick="addvalue(3)" class="number" />
+        <input type="button" value="+" onclick="addvalue('+')" class="input""/>
+        <br />
+        <input type="button" value="4" onclick="addvalue(4)" class="number" />
+        <input type="button" value="5" onclick="addvalue(5)" class="number" />
+        <input type="button" value="6" onclick="addvalue(6)" class="number" />
+        <input type="button" value="-" onclick="addvalue('-')" class="input"/>
+        <br />
+        <input type="button" value="7" onclick="addvalue(7)" class="number" />
+        <input type="button" value="8" onclick="addvalue(8)" class="number" />
+        <input type="button" value="9" onclick="addvalue(9)" class="number" />
+        <input type="button" value="x" onclick="addvalue('*')" class="input"/>
+        <br />
+        <input type="button" value="C" onclick="reset()" id="C"/>
+        <input type="button" value="0" onclick="addvalue(0)" class="number" />
+        <input type="button" value="=" onclick="compute()" id="igual"/>
+        <input type="button" value="/" onclick="addvalue('/')" class="input"/>
+        <br />
+      </form>
+    </div>
+    <h2>Created By: David Muñoz <br>
+      Github: <a href="https://github.com/DavidM444" target="blank">DavidM444</a>
+    </h2>
+</body>
+</html>
